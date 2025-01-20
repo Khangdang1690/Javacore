@@ -28,10 +28,15 @@ public class App {
 //        System.out.println("================");
 //        System.out.println(person2);
 
-        Employee employee = new Employee();
-        employee.setId(10l);
-        employee.setFirstName("Nhan vien A");
+//        Employee employee = new Employee();
+//        employee.setId(10l);
+//        employee.setFirstName("Nhan vien A");
+//
+//        System.out.println(employee.toString());
 
-        System.out.println(employee.toString());
+        SampleClass sampleClass = new SampleClass();
+        sampleClass.foo();
+        String name = sampleClass.name;
+        System.out.println(name);
     }
 }

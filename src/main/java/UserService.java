@@ -1,4 +1,4 @@
-public class UserService implements SampleInterface, EmployeeInterface {
+public abstract class UserService implements SampleInterface, EmployeeInterface {
     @Override
     public void getName() {
         System.out.println(name);

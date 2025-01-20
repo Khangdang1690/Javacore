@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 import java.util.List;
 
-public class Person {
+public class Person extends SampleFinalClass {
     // 1. field là thể hiện của state
     private long id; // identity
     private String firstName; // field
