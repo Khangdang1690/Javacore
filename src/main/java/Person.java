@@ -11,20 +11,6 @@ public class Person extends SampleFinalClass {
     // No-argument constructor
     public Person() {}
 
-    public Person(long id, String firstName, String lastName) {
-        this.id = id;
-        this.firstName = firstName;
-        this.lastName = lastName;
-    }
-
-    public List<Address> getAddress() {
-        return address;
-    }
-
-    public void setAddress(List<Address> address) {
-        this.address = address;
-    }
-
     public long getId() {
         return id;
     }
@@ -49,14 +35,12 @@ public class Person extends SampleFinalClass {
         this.lastName = lastName;
     }
 
-    @Override
-    public String toString() {
-        return "Person{" +
-                "id=" + id +
-                ", firstName='" + firstName + '\'' +
-                ", lastName='" + lastName + '\'' +
-                ", address=" + address +
-                '}';
+    public List<Address> getAddress() {
+        return address;
+    }
+
+    public void setAddress(List<Address> address) {
+        this.address = address;
     }
 
     static class Address {
