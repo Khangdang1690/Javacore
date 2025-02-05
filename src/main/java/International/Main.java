@@ -1,6 +1,8 @@
 package International;
 
+import java.text.DateFormat;
 import java.text.NumberFormat;
+import java.util.Date;
 import java.util.Locale;
 
 public class Main {
@@ -24,6 +26,7 @@ public class Main {
         Locale vnLocale = new Locale("vi", "VN");
         Locale chinaLocale = Locale.CHINA;
         Locale japanLocale = Locale.JAPAN;
+        Locale geLocale = Locale.GERMANY;
 
         System.out.println("getDisplayLanguage(): " + vnLocale.getDisplayLanguage());
         System.out.println("getDisplayLanguage(): " + japanLocale.getDisplayLanguage());
@@ -38,5 +41,29 @@ public class Main {
         System.out.println(vnFormat.format(currency));
         System.out.println(jpFormat.format(currency));
         System.out.println(geFormat.format(currency));
+
+        System.out.println("----- [ DateFormat ] -----");
+        DateFormat dateFormat = DateFormat.getDateInstance(DateFormat.DEFAULT, vnLocale);
+        System.out.println(dateFormat.format(new Date()));
+
+        System.out.println("----- [ Date ] -----");
+
+        DateFormat vnTimeFormat = DateFormat.getTimeInstance(DateFormat.SHORT, vnLocale);
+        System.out.println(vnTimeFormat.format(new Date()));
+        DateFormat jpTimeFormat = DateFormat.getTimeInstance(DateFormat.SHORT, japanLocale);
+        System.out.println(jpTimeFormat.format(new Date()));
+        DateFormat geTimeFormat = DateFormat.getTimeInstance(DateFormat.SHORT, geLocale);
+        System.out.println(geTimeFormat.format(new Date()));
+        DateFormat usTimeFormat = DateFormat.getTimeInstance(DateFormat.SHORT, defaultLocale);
+        System.out.println(usTimeFormat.format(new Date()));
+
+        TestSay testSay = new TestSay();
+        testSay.say("welcome");
+        TestSay2 testSay2 = new TestSay2();
+        testSay2.say("Aloha usa");
+
+        TestSay3 testSay3 = new TestSay3();
+        testSay3.say("do something");
+        testSay3.doit();
     }
 }
