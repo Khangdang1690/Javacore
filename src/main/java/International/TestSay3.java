@@ -9,5 +9,6 @@ public class TestSay3 implements Say{
     @Override
     public void doit() {
         System.out.println("Do nothing");
+        System.out.println("Do nothing");
     }
 }
