@@ -20,5 +20,6 @@ public class Main {
         Pearson p = new Pearson("Alice", 25);
         System.out.println(p); // Implicitly calls p.toString()
         System.out.println(p.toString()); // Explicit call
+        System.out.println(p);
     }
 }
