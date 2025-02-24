@@ -22,5 +22,6 @@ public class treeset {
         System.out.println(treeSet.headSet(15));
         System.out.println(treeSet.tailSet(15));
         System.out.println("I'm tired");
+        System.out.println("I push for company");
     }
 }
