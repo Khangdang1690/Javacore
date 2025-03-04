@@ -24,5 +24,6 @@ public class treeset {
         System.out.println("I'm tired");
         System.out.println("I push for company");
         System.out.println("I learn some java");
+        System.out.println("Push for my Spring course");
     }
 }
