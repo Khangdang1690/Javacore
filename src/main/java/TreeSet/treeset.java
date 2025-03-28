@@ -21,6 +21,5 @@ public class treeset {
         System.out.println(treeSet.subSet(10,20));
         System.out.println(treeSet.headSet(15));
         System.out.println(treeSet.tailSet(15));
-        System.out.println("I push for my udemy");
     }
 }
